@@ -7,16 +7,16 @@ def noppa():
     return random.randint(1,6)
 
 heitot = noppa()
-while heitot != 6 :
+while heitot < 6 :
     print(f'{heitot}')
     print("heitetään uudestaan")
     heitot = noppa()
-if heitot == 6 :
-    print(f'{heitot}')
-    print("sait kutosen, ohjelma loppuu")
+print("Sait kutosen, ohjelma loppuu")
 
 
 
+
+# tässä tehtävässä ei tarvita tuota iffiä koska voidaan myös vaan käyttää whilessä raja-arvoa 6
 
 
 
