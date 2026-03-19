@@ -27,5 +27,26 @@ class Auto:
     def kulje(self, tunnit):
         self.matka += (tunnit * self.nopeus)
 
+autot = []
+for i in range(1, 11):
+    rekisteritunnus = "ABC" + str(i)
+    huippunopeus = random.randint(100, 200)
+    autot.append(Auto(rekisteritunnus, huippunopeus))
+
+loppu = False
+
+while True:
+    if loppu == True:
+        break
+    for auto in autot:
+        if auto.matka > 10000:
+            loppu = True
+        auto.kiihdytä(random.randint(-10, 15))
+        auto.kulje(1)
+
+for auto in autot:
+    print(f"Rekisterinumero {auto.rekisteritunnus}, kuljettu matka {auto.matka}")
+
+
 auto = Auto(rekisteritunnus="ABC-123", huippunopeus=142)
 
