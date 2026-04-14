@@ -42,3 +42,4 @@ lehti1 = Lehti("Aku Ankka", "Aki Hyyppä")
 
 kirja1.tulosta_tiedot()
 lehti1.tulosta_tiedot()
+

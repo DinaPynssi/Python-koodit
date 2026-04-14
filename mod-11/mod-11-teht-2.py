@@ -55,4 +55,3 @@ polttomoottoriauto1.kulje(3)
 print(f"Sähköauton matka: {sähkoauto1.matka} km")
 print(f"Polttomoottoriauton matka: {polttomoottoriauto1.matka} km")
 
-
